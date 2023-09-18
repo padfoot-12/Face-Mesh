@@ -2,6 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import * as tf from "@tensorflow/tfjs";
+import * as facemesh from "@tensorflow-models/facemesh";
+import Webcam from "react-webcam";
 
 function App() {
   const [count, setCount] = useState(0)
