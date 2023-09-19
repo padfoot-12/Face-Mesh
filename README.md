@@ -1,8 +1,5 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a Face-Mesh web application, which maps the points on the user's face using the webcam feed and draws a mesh, which tracks the movement of the user's face.
+This happens in three steps:
+1. The webcam feed and canvas are set up.
+2. The program uses tensorflow libraries to detect the points on the user's face using a detect function.
+3. The points and the traingles formed are then drawn onto the canvas.
