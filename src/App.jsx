@@ -40,7 +40,7 @@ function App() {
       console.log(face);
 
       const ctx = canvasRef.current.getContext("2d");
-      drawMesh(face, ctx)
+      drawMesh(face, ctx);
     }
   }
 
