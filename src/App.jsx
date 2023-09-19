@@ -1,11 +1,10 @@
 import { useRef, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import * as tf from "@tensorflow/tfjs";
 import * as facemesh from "@tensorflow-models/facemesh";
 import Webcam from "react-webcam";
 import { drawMesh } from './utilities';
+import Heading from './Heading';
 
 function App() {
   const webcamRef = useRef(null);
@@ -48,10 +47,11 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <Webcam ref={webcamRef}/>
-        <canvas ref={canvasRef}/>
-      </header>
+      <Heading className="head"/>
+      <div className="Content">
+          <Webcam className="webcam" ref={webcamRef}/>
+          <canvas ref={canvasRef}/>
+      </div>
     </div>
   )
 }
